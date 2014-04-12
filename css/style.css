@@ -4,11 +4,13 @@ body{
 }
 
 #topPanel {
+  padding: 0;
   margin-top: 4%;
   margin-left: 10%;
   margin-right: 10%;
-  overflow: hidden;
+  margin-bottom: 3%;
 }
+
 
 #introText {
   line-height: 150%;
@@ -17,28 +19,43 @@ body{
 #mainPanel {
   margin: 0%;
   padding: 0%;
+  width: 100%;
 }
 
 #classesPanel {
+  margin: 0%;
   padding: 0%;
-  margin-top: 5%;
+  width: 50%;
   margin-left: 10%;
-  margin-right: 50%;
-  
-  
+  left: 10%;
+  position: absolute;
 }
 
+#gradePanel {
+  margin: 0%;
+  padding: 0%;
+  right: 10%;
+  position: absolute;
+  float: right;
+  width: 50%;
+  
+}
+/*
 #class1 {
   padding: 0%;
   margin: 0%;
+  margin-right: 40%;
 }
+
 
 #classNameLabel {
   font-size: 14px;
+  margin-left: 20%;
 }
 
 #gradePercentLabel {
   font-size: 14px;
+  margin-left: 2%;
 }
 
 #gradeLabel {
@@ -48,30 +65,30 @@ body{
 #class1Name {
   padding: 0%;
   margin: 0%;
-  overflow: hidden;
+  margin-left: 2%;
   float: left;
 }
 
 #class1GradePercent {
   padding: 0%;
-  margin: 0%;
-  overflow: hidden;
+  margin: auto;
   margin-left: 3%;
   float: left;
 }
 
 #class1Grade {
-  float: left;
   padding: 0%;
-  margin: 0%;
+  margin: auto;
   margin-left: 3%;
-  overflow: hidden;
+  float: left;
 }
 
 #class2Name {
   padding: 0%;
-  float: left;
+  margin: auto;
   margin-top: 3%;
+  overflow: hidden;
+  
 }
 
 #class2GradePercent {
@@ -188,12 +205,6 @@ body{
   overflow: hidden;
 }
 
-#gradePanel {
-  padding: 0%;
-  
-  float: left;
-  margin-left: 15%;
-  margin-top: 0%;
-}
 
+*/
 
