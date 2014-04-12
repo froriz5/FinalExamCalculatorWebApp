@@ -1,0 +1,199 @@
+body{
+  margin: 0px;
+  font-family: Arial;
+}
+
+#topPanel {
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: hidden;
+}
+
+#introText {
+  line-height: 150%;
+}
+
+#mainPanel {
+  margin: 0%;
+  padding: 0%;
+}
+
+#classesPanel {
+  padding: 0%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 50%;
+  
+  
+}
+
+#class1 {
+  padding: 0%;
+  margin: 0%;
+}
+
+#classNameLabel {
+  font-size: 14px;
+}
+
+#gradePercentLabel {
+  font-size: 14px;
+}
+
+#gradeLabel {
+  font-size: 14px;
+}
+
+#class1Name {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  float: left;
+}
+
+#class1GradePercent {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  margin-left: 3%;
+  float: left;
+}
+
+#class1Grade {
+  float: left;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 3%;
+  overflow: hidden;
+}
+
+#class2Name {
+  padding: 0%;
+  float: left;
+  margin-top: 3%;
+}
+
+#class2GradePercent {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  margin-left: 3%;
+  margin-top: 3%;
+  float: left;
+}
+
+#class2Grade {
+  float: left;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 3%;
+  margin-top: 3%;
+  overflow: hidden;
+}
+
+#class3Name {
+  padding: 0%;
+  float: left;
+  margin-top: 3%;
+}
+
+#class3GradePercent {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  margin-left: 3%;
+  margin-top: 3%;
+  float: left;
+}
+
+#class3Grade {
+  float: left;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 3%;
+  margin-top: 3%;
+  overflow: hidden;
+}
+
+#class4Name {
+  padding: 0%;
+  float: left;
+  margin-top: 3%;
+}
+
+#class4GradePercent {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  margin-left: 3%;
+  margin-top: 3%;
+  float: left;
+}
+
+#class4Grade {
+  float: left;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 3%;
+  margin-top: 3%;
+  overflow: hidden;
+}
+
+#class5Name {
+  padding: 0%;
+  float: left;
+  margin-top: 3%;
+}
+
+#class5GradePercent {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  margin-left: 3%;
+  margin-top: 3%;
+  float: left;
+}
+
+#class5Grade {
+  float: left;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 3%;
+  margin-top: 3%;
+  overflow: hidden;
+}
+
+#class6Name {
+  padding: 0%;
+  float: left;
+  margin-top: 3%;
+}
+
+#class6GradePercent {
+  padding: 0%;
+  margin: 0%;
+  overflow: hidden;
+  margin-left: 3%;
+  margin-top: 3%;
+  float: left;
+}
+
+#class6Grade {
+  float: left;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 3%;
+  margin-top: 3%;
+  overflow: hidden;
+}
+
+#gradePanel {
+  padding: 0%;
+  
+  float: left;
+  margin-left: 15%;
+  margin-top: 0%;
+}
+
+
