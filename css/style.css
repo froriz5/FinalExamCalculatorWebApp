@@ -1,0 +1,53 @@
+body{
+  margin: 0px;
+  font-family: Arial;
+}
+
+#mainPanel {
+  background-image: url('../images/tundra.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  width: 60%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#naviLayer {
+  background-color:rgba(84,84,84,0.7);
+  padding: 0%;
+  overflow: hidden;
+  height: 15%;
+  margin-top: 36.4%;
+}
+
+#leftButton {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  float: left;
+  /*position: absolute;*/
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#leftButtonImg {
+  width: 100%;
+  height: 100%;
+}
+
+#rightButton {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  float: right;
+  /*position: absolute;*/
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#rightButtonImg {
+  width: 100%;
+  height: 100%;
+}
