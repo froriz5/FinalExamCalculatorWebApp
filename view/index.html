@@ -1,45 +1,130 @@
 <!doctype html>
 <html>
   <head>
-    <title>Slideshow Page</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <title>Final Exam Calculator</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
 
   <body>
+    <div id="topPanel">
+      <p id="introText">If you are going into your Final Exam, and want to know what score you need to get,
+      in order to get a certain letter grade in the class (A, B, C, D, or F), this app will
+      calculate it for you.
+    </p>
+    </div>
     <div id="mainPanel">
 
       <div id="classesPanel">
         <div id="class1">
           <div id="class1Name">
-            <input type="text" name="Class Name">
+            <label id="classNameLabel">Class Name</label>
+            <br>
+            <input type="text" name="Class Name" placeholder="Class Name">
           </div>
           <div id="class1GradePercent">
-            <input type="number" name="Grade Percentage (0-100)">
+            <label id="gradePercentLabel">Grade Percent</label>
+            <br>
+            <input type="number" name="Grade Percentage" placeholder="Grade Percent">
           </div>
           <div id="class1Grade">
-            <input type="number" name="Grade (0-100)">
+            <label id="gradeLabel">Grade</label>
+            <br>
+            <input type="number" name="Grade" placeholder="Grade">
           </div>
         </div>
+        <br>
+
+        <div id="class2">
+          <div id="class2Name">
+            <input type="text" name="Class Name" placeholder="Class Name">
+          </div>
+          <div id="class2GradePercent">
+            <input type="number" name="Grade Percentage" placeholder="Grade Percent">
+          </div>
+          <div id="class2Grade">
+            <input type="number" name="Grade" placeholder="Grade">
+          </div>
+        </div>
+        <br>
+
+        <div id="class3">
+          <div id="class3Name">
+            <input type="text" name="Class Name" placeholder="Class Name">
+          </div>
+          <div id="class3GradePercent">
+            <input type="number" name="Grade Percentage" placeholder="Grade Percent">
+          </div>
+          <div id="class3Grade">
+            <input type="number" name="Grade" placeholder="Grade">
+          </div>
+        </div>
+        <br>
+
+        <div id="class4">
+          <div id="class4Name">
+            <input type="text" name="Class Name" placeholder="Class Name">
+          </div>
+          <div id="class4GradePercent">
+            <input type="number" name="Grade Percentage" placeholder="Grade Percent">
+          </div>
+          <div id="class4Grade">
+            <input type="number" name="Grade" placeholder="Grade">
+          </div>
+        </div>
+        <br>
+
+        <div id="class5">
+          <div id="class5Name">
+            <input type="text" name="Class Name" placeholder="Class Name">
+          </div>
+          <div id="class5GradePercent">
+            <input type="number" name="Grade Percentage" placeholder="Grade Percent">
+          </div>
+          <div id="class5Grade">
+            <input type="number" name="Grade" placeholder="Grade">
+          </div>
+        </div>
+        <br>
+
+        <div id="class6">
+          <div id="class6Name">
+            <input type="text" name="Class Name" placeholder="Class Name">
+          </div>
+          <div id="class6GradePercent">
+            <input type="number" name="Grade Percentage" placeholder="Grade Percent">
+          </div>
+          <div id="class6Grade">
+            <input type="number" name="Grade" placeholder="Grade">
+          </div>
+        </div>
+        <br>
+
       </div>
 
+
       <div id="gradePanel">
-        <div id="calcButton">
+        <div id="calcButtonId">
+          <button id="calcButton" type="button">Calculate Final Exam Score</button>
         </div>
-        
+
         <div id="gradeInfo">
           <div id="gradeAInfo">
+            <p id="aGradeId">A)</p>
+            
           </div>
           <div id="gradeBInfo">
+            <p id="bGradeId">B)</p>
           </div>
           <div id="gradeCInfo">
+            <p id="cGradeId">C)</p>
           </div>
           <div id="gradeDInfo">
-          </div>
-          <div id="gradeEInfo">
+            <p id="dGradeId">D)</p>
           </div>
           <div id="gradeFInfo">
+            <p id="fGradeId">F)</p>
           </div>
         </div>
       </div>
