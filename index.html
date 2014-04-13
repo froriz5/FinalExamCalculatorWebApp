@@ -10,125 +10,131 @@
 </head>
 
 <body>
-
-  <h1>Final Exam Score Calculator</h1>
-  <h2>By: Felipe Roriz</h2>
-  <h3>https://github.com/froriz5/FinalExamCalculatorWebApp</h3>
-
-  <p id="introText">If you are going into your Final Exam, and want to know what score you need to get,
-    in order to get a certain letter grade in the class (A, B, C, D, or F), this app will
-    calculate it for you.
-  </p>
-
-
-  <!-- Classes Labels  -->
-  <div id="classLabels">
-    <div id="classNameLabel">
-      <label id="classNameLabelId">Assignment Type</label>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Final Exam Score Calculator</h1>
+      <h2>By: Felipe Roriz</h2>
+      <h4>https://github.com/froriz5/FinalExamCalculatorWebApp</h4>
+      <br>
+      <p id="introText">If you are going into your Final Exam, and want to know what score you need to get,
+        in order to get a certain letter grade in the class (A, B, C, D, or F), this app will
+        calculate it for you.
+      </p>
     </div>
 
-    <div id="classGradePercentLabel">
-      <label id="classNamePercentLabelId">Grade Percent</label>
+    <!-- Left Labels-->
+    <div class="row">
+      <div class="col-xm-4">
+        <!-- Classes Labels  -->
+        <span>
+          <label id="classNameLabelId">Assignment Type</label>
+        </span>
+        <span style="margin-left:3%;">
+          <label id="classNamePercentLabelId">Grade Percent</label>
+        </span>
+        <span style="margin-left:6%;">
+          <label id="classNameLabelId">Grade</label>
+        </span>
+        <br>
+
+        <!-- First Assignment Type -->
+        <span>
+          <input style="width: 120px"id="class1NameId" type="text" placeholder="HW">
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class1PercentId" type="number" placeholder="0-100">
+          %
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class1GradeId" type="number" placeholder="0-100">
+          %
+        </span>
+        <br>
+
+        <!-- Second Assignment Type -->
+        <span>
+          <input style="width: 120px"id="class2NameId" type="text" placeholder="Quizzes">
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class2PercentId" type="number" placeholder="0-100">
+          %
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class2GradeId" type="number" placeholder="0-100">
+          %
+        </span>
+        <br>
+
+        <!-- Third Assignment Type -->
+        <span>
+          <input style="width: 120px"id="class3NameId" type="text" placeholder="Tests">
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class3PercentId" type="number" placeholder="0-100">
+          %
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class3GradeId" type="number" placeholder="0-100">
+          %
+        </span>
+        <br>
+
+        <!-- Fourth Assignment Type -->
+        <span>
+          <input style="width: 120px"id="class4NameId" type="text" placeholder="Midterm">
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class4PercentId" type="number" placeholder="0-100">
+          %
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class4GradeId" type="number" placeholder="0-100">
+          %
+        </span>
+        <br>
+
+        <!-- Fifth Assignment Type -->
+        <span>
+          <input style="width: 120px"id="class5NameId" type="text" placeholder="Participation">
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class5PercentId" type="number" placeholder="0-100">
+          %
+        </span>
+        <span>
+          <input style="width: 60px; margin-left: 5%;" id="class5GradeId" type="number" placeholder="0-100">
+          %
+        </span>
+        
+
+      </div>
+
+      <div class="col-xm-4">
+        <span>
+          <button onclick="initialize()">Test Data</button>
+        </span>
+      </div>
     </div>
-
-    <div id="classGradeLabel">
-      <label id="classNameLabelId">Grade</label>
+     <!--
+  <div id="gradeInfo">
+    <div id="gradeAInfo">
+      <p id="aGradeId">A)</p>
+    </div>
+    <div id="gradeBInfo">
+      <p id="bGradeId">B)</p>
+    </div>
+    <div id="gradeCInfo">
+      <p id="cGradeId">C)</p>
+    </div>
+    <div id="gradeDInfo">
+      <p id="dGradeId">D)</p>
+    </div>
+    <div id="gradeFInfo">
+      <p id="fGradeId">F)</p>
     </div>
   </div>
-
-  <div id="class1">
-    <div id="class1TextBoxes">
-      <div id="class1NameTextBox">
-        <input id="class1NameId" type="text" placeholder="HW">
-      </div>
-
-      <div id="class1GradePercentTextBox">
-        <input id="class1PercentId" type="number" placeholder="0-100">
-      </div>
-
-      <div id="class1GradeTextBox">
-        <input id="class1GradeId" type="number" placeholder="0-100">
-      </div>
-    </div>
-  </div>
-
-  <div id="class2">
-    <div id="class2TextBoxes">
-      <div id="class2NameTextBox">
-        <input id="class2NameId" type="text" placeholder="Quizzes">
-      </div>
-
-      <div id="class2GradePercentTextBox">
-        <input id="class2PercentId" type="number" placeholder="0-100">
-      </div>
-
-      <div id="class2GradeTextBox">
-        <input id="class2GradeId" type="number" placeholder="0-100">
-      </div>
-    </div>
-  </div>
-
-  <div id="class3">
-    <div id="class3TextBoxes">
-      <div id="class3NameTextBox">
-        <input id="class3NameId" type="text" placeholder="Tests">
-      </div>
-
-      <div id="class3GradePercentTextBox">
-        <input id="class3PercentId" type="number" placeholder="0-100">
-      </div>
-
-      <div id="class3GradeTextBox">
-        <input id="class3GradeId" type="number" placeholder="0-100">
-      </div>
-    </div>
-  </div>
-
-  <div id="class4">
-    <div id="class4TextBoxes">
-      <div id="class4NameTextBox">
-        <input id="class4NameId" type="text" placeholder="Labs">
-      </div>
-
-      <div id="class4GradePercentTextBox">
-        <input id="class4PercentId" type="number" placeholder="0-100">
-      </div>
-
-      <div id="class4GradeTextBox">
-        <input id="class4GradeId" type="number" placeholder="0-100">
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div id="initButtonId">
-  <button id="initButton" type="button" onclick="initialize()">Test Data</button>
-</div>
-<div id="calcButtonId">
-  <button id="calcButton" type="button" onclick="calcGrade()">Calculate Final Exam Score</button>
-</div>
-
-<div id="gradeInfo">
-  <div id="gradeAInfo">
-    <p id="aGradeId">A)</p>
-  </div>
-  <div id="gradeBInfo">
-    <p id="bGradeId">B)</p>
-  </div>
-  <div id="gradeCInfo">
-    <p id="cGradeId">C)</p>
-  </div>
-  <div id="gradeDInfo">
-    <p id="dGradeId">D)</p>
-  </div>
-  <div id="gradeFInfo">
-    <p id="fGradeId">F)</p>
-  </div>
-</div>
-
-
-</div>
+-->
+</div> <!-- end of container-->
 <!-- javascript -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
