@@ -3,9 +3,27 @@ body{
   font-family: Arial;
 }
 
+#title {
+  text-align: center;
+  line-height: 90%;
+}
+
+h1 {
+}
+
+h2 {
+  margin-top: 4%;
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
 #topPanel {
   width: 80%;
   margin-left: 10%;
+  margin-top: 4%;
 }
 
 
