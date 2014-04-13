@@ -4,64 +4,106 @@ body{
 }
 
 #topPanel {
-  padding: 0;
-  margin-top: 4%;
+  width: 80%;
   margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 3%;
 }
 
 
 #introText {
-  line-height: 150%;
+  line-height: 200%;
+  text-align: center;
 }
 
 #mainPanel {
-  margin: 0%;
-  padding: 0%;
   width: 100%;
+
+  left: 10%;
+  right: 10%;
+  margin-top: 5%;
+  margin-bottom: 50%;
 }
 
 #classesPanel {
-  margin: 0%;
-  padding: 0%;
-  width: 50%;
+  width: 40%;
   margin-left: 10%;
-  left: 10%;
-  position: absolute;
+  margin-right: 10%;
+  margin-bottom: 50%;
+  float: left;
 }
 
 #gradePanel {
-  margin: 0%;
-  padding: 0%;
-  right: 10%;
-  position: absolute;
-  float: right;
-  width: 50%;
-  
+  float: left;
 }
+
+#calcButtonId {
+  margin-top: 2%;
+}
+
+
+
+/* --Assignment Labels --*/
+#classLabels {
+}
+
+#classNameLabel {
+  clear: left;
+  float: left;
+}
+
+#classGradePercentLabel {
+  float: left;
+  margin-left: 6%;
+}
+
+#classGradeLabel {
+  float: left;
+  margin-left: 14%;
+}
+
+/* ----------------- */
+
+#class1, #class2, #class3, #class4 {
+  margin-top: 2%;
+}
+
+#class1NameTextBox, #class2NameTextBox, #class3NameTextBox, #class4NameTextBox {
+  float: left;
+}
+
+#class1GradePercentTextBox, #class2GradePercentTextBox,
+ #class3GradePercentTextBox, #class4GradePercentTextBox {
+  float: left;
+  margin-left: 3%;
+}
+
+#class1GradeTextBox, #class2GradeTextBox, #class3GradeTextBox, #class4GradeTextBox {
+  float: left;
+  margin-left: 3%;
+}
+
+
+
+
 /*
-#class1 {
-  padding: 0%;
-  margin: 0%;
-  margin-right: 40%;
-}
 
 
 #classNameLabel {
   font-size: 14px;
-  margin-left: 20%;
+  margin-left: 1%;
+  position: relative;
+
 }
 
 #gradePercentLabel {
   font-size: 14px;
   margin-left: 2%;
+  float: left;
+  overflow: hidden;
 }
-
 #gradeLabel {
   font-size: 14px;
 }
-
+/*
 #class1Name {
   padding: 0%;
   margin: 0%;
