@@ -1,3 +1,4 @@
+var numAssignments = 5;
 function calcGrade() {
 	var totalPercent = 0;
 	var sum = 0;
