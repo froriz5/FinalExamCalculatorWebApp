@@ -11,18 +11,25 @@ function calcGrade() {
 	for (var i = 1; i < 6; i++) {
 		
 		try {
-			var id = 'class'+i+'PercentId';
-			var percent = parseFloat(document.getElementById(id).value);
+			var percentId = 'class'+i+'PercentId';
+			var gradeId = 'class'+i+'GradeId';
+			var percent = parseFloat(document.getElementById(percentId).value);
+			var grade = parseFloat(document.getElementById(gradeId).value);
+			var gradeAndPercent = grade * (percent/100.0);
 			
-			if (!isNaN(percent)) {
+			if (!isNaN(percent) && !isNaN(grade)) {
 				totalPercent += percent;
+				grades.push(gradeAndPercent);
 				hasGrade = true;
 			}
 		}
-		catch(err) {}
+		catch(err) {
+			alert('grade or percent empty');
+		}
 	}
 	
 	var finalPercent = 100.0 - totalPercent;
+	/*
 	for (var i = 1; i < numGrades+1; i++) {
 		try {
 			var grade = parseFloat(document.getElementById('class'+i+'GradeId').value) *
@@ -35,6 +42,7 @@ function calcGrade() {
 		catch(err) {}
 		
 	}
+	*/
 
 
 	while(grades.length > 0) {
