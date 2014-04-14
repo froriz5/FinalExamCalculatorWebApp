@@ -86,6 +86,7 @@ else {
 }
 
 function initialize() {
+	clearData();
 	document.getElementById('class1NameId').value = "HW";
 	document.getElementById('class2NameId').value = "Quizzes";
 	document.getElementById('class3NameId').value = "Tests";
