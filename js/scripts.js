@@ -29,21 +29,6 @@ function calcGrade() {
 	}
 	
 	var finalPercent = 100.0 - totalPercent;
-	/*
-	for (var i = 1; i < numGrades+1; i++) {
-		try {
-			var grade = parseFloat(document.getElementById('class'+i+'GradeId').value) *
-			(parseFloat((document.getElementById('class'+i+'PercentId').value)/100));
-
-			if (!isNaN(grade)) {
-				grades.push(grade);
-			}
-		}
-		catch(err) {}
-		
-	}
-	*/
-
 
 	while(grades.length > 0) {
 		var grade = grades.pop();

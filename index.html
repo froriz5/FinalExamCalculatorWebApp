@@ -10,14 +10,14 @@
   <!-- Google Analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-49991902-1', 'finalexamcalculator.herokuapp.com');
   ga('send', 'pageview');
 
-</script>
+  </script>
 </head>
 
 <body>
@@ -33,9 +33,9 @@
       </p>
     </div>
 
-    <!-- Left Labels-->
     <div class="row">
       <div style="padding-bottom:5%;"class="col-lg-8 col-md-8 col-sm-9 col-xm-12">
+
         <!-- Classes Labels  -->
         <span>
           <label id="classNameLabelId">Assignment Type</label>
@@ -63,8 +63,6 @@
           </span>
         </div>
         
-
-
         <!-- Second Assignment Type -->
         <div style="margin-top:1%;">
           <span>
@@ -82,56 +80,62 @@
 
         <!-- Third Assignment Type -->
         <div style="margin-top:1%;">
-        <span>
-          <input style="width: 120px"id="class3NameId" type="text" placeholder="Tests">
-        </span>
-        <span>
-          <input style="width: 60px; margin-left: 5%;" id="class3PercentId" type="number" placeholder="0-100">
-          %
-        </span>
-        <span>
-          <input style="width: 60px; margin-left: 5%;" id="class3GradeId" type="number" placeholder="0-100">
-          %
-        </span>
+          <span>
+            <input style="width: 120px"id="class3NameId" type="text" placeholder="Tests">
+          </span>
+          <span>
+            <input style="width: 60px; margin-left: 5%;" id="class3PercentId" type="number" placeholder="0-100">
+            %
+          </span>
+          <span>
+            <input style="width: 60px; margin-left: 5%;" id="class3GradeId" type="number" placeholder="0-100">
+            %
+          </span>
         </div>
 
         <!-- Fourth Assignment Type -->
         <div style="margin-top:1%;">
-        <span>
-          <input style="width: 120px"id="class4NameId" type="text" placeholder="Midterm">
-        </span>
-        <span>
-          <input style="width: 60px; margin-left: 5%;" id="class4PercentId" type="number" placeholder="0-100">
-          %
-        </span>
-        <span>
-          <input style="width: 60px; margin-left: 5%;" id="class4GradeId" type="number" placeholder="0-100">
-          %
-        </span>
+          <span>
+            <input style="width: 120px"id="class4NameId" type="text" placeholder="Midterm">
+          </span>
+          <span>
+            <input style="width: 60px; margin-left: 5%;" id="class4PercentId" type="number" placeholder="0-100">
+            %
+          </span>
+          <span>
+            <input style="width: 60px; margin-left: 5%;" id="class4GradeId" type="number" placeholder="0-100">
+            %
+          </span>
         </div>
 
         <!-- Fifth Assignment Type -->
         <div style="margin-top:1%;">
-        <span>
-          <input style="width: 120px"id="class5NameId" type="text" placeholder="Participation">
-        </span>
-        <span>
-          <input style="width: 60px; margin-left: 5%;" id="class5PercentId" type="number" placeholder="0-100">
-          %
-        </span>
-        <span>
-          <input style="width: 60px; margin-left: 5%;" id="class5GradeId" type="number" placeholder="0-100">
-          %
-        </span>
+          <span>
+            <input style="width: 120px"id="class5NameId" type="text" placeholder="Participation">
+          </span>
+          <span>
+            <input style="width: 60px; margin-left: 5%;" id="class5PercentId" type="number" placeholder="0-100">
+            %
+          </span>
+          <span>
+            <input style="width: 60px; margin-left: 5%;" id="class5GradeId" type="number" placeholder="0-100">
+            %
+          </span>
         </div>
 
+
       </div>
+
+      <!-- Buttons and Final Exam Info-->
       <div class="col-lg-4 col-md-4 col-sm-3">
         <span>
           <button onclick="initialize()">Test Data</button>
           <button onclick="calcGrade()">Calculate Final Grade</button>
         </span>
         <br>
+        <div style="margin-top:5%;">
+          To Get A:
+        </div>
         <div style="margin-top:3%;">
           <p id="Grade1Id">A)</p>
         </div>
@@ -152,10 +156,10 @@
         <button onclick="clearData()">Clear Data</button>
       </div>
     </div>
-   
-</div> <!-- end of container-->
-<!-- javascript -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
+
+  </div> <!-- end of container-->
+  <!-- javascript -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
